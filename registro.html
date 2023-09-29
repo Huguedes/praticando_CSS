@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style/registro.css" />
+    <link rel="icon" type="image/x-icon" href="/img/LogoTecCursos.png">
+  </head>
+  <body>
+    <header>
+      <div class="max-header">
+        <input type="checkbox" id="checkbox" />
+
+        <label class="label" for="checkbox">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <div id="logo-img">
+          <a href="./home.html">
+            <img class="img-logo" src="/img/LogoTecCursos.png" alt="Logo" />
+          </a>
+        </div>
+
+        <nav id="menu-header">
+          <ul class="menu-header">
+            <li>
+              <a href="./home.html" class="item-nav">Home</a>
+            </li>
+            <li><a href="#" class="item-nav"> Cursos</a></li>
+            <li><a href="#" class="item-nav">Destaque</a></li>
+            <li>
+              <a href="./login.html" class="item-nav">Login</a>
+            </li>
+            <li>
+              <a href="#" class="item-nav">Cadastre-se</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <div class="login-esquerda">
+        <h1>Faça seu registro<br />Entre para o nosso time</h1>
+      </div>
+      <div class="login-direita">
+        <div class="formulario">
+          <h1>REGISTRO</h1>
+          <form action="mailto:hugo7gl@gmail.com" method="post" >
+          <div class="formulario-tx">
+            <label for="nome"><strong>Nome</strong></label>
+            <input type="text" name="nome" id="nome" required>
+        </div>
+        <div class="formulario-tx">
+          <label for="sobrenome"><strong>Sobrenome</strong></label>
+          <input type="text" name="sobrenome" id="sobrenome" required>
+        </div>
+        <div class="formulario-tx">
+          <label for="senha">Senha</label>
+          <input type="password" size="30" name="Senha" placeholder="Senha" required/>
+        </div>
+        <div class="formulario-tx">
+          <label for="senha">Confirmar senha</label>
+          <input type="password" size="30" name="Senha" placeholder="Senha" required/>
+        </div>
+        <div class="formulario-tx">
+          <label for="email">Email</label>
+          <input type="email" name="senha" placeholder="exemplo@algo.com" required />
+        </div>
+        <div class="formulario-tx">
+          <label for="cpf">CPF</label>
+          <input type="text" size="14" name="cpf" placeholder="123.123.123-12" maxlength="14" required pattern="[0-9]{3}.?[0-9]{3}.?[0-9]{3}-?[0-9]{2}"/>
+        </div>
+        <div class="formulario-tx">
+          <label for="cpf">Telefone</label>
+          <input type="text" size="14" name="cpf" placeholder="(99)99999-9999" maxlength="14" required pattern="(\([0-9]{2}\))\s([9]{1})?([0-9]{4})-([0-9]{4})"/>
+        </div>
+        <div class="formulario-tx">
+          <label for="sexo">Masculino</label>
+          <input type="radio" name="sexo" value="Masculino" checked="checked">
+        </div>
+        <div class="formulario-tx">
+          <label for="sexo">Feminino</label>
+          <input type="radio" name="sexo" value="Masculino" checked="checked">
+        </div>
+        <div class="formulario-tx">
+          <button class="login-botao">Continuar</button>
+        </div>
+      </form>
+      </div>
+    </div>
+  </body>
+</html>
